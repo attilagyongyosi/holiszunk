@@ -1,0 +1,49 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #212121;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#holiszunk {
+    text-align: center;
+    font-size: 7em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#gh-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.7em;
+    font-weight: 300;
+    padding: 4px 8px;
+
+    display: flex;
+    align-items: center;
+}
+
+#gh-link img {
+    margin-right: 4px;
+}
+
+#gh-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
