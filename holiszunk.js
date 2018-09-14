@@ -18,7 +18,10 @@ var places = [
     'fácán',
     'say hello',
     'pikoló',
-    'hidas'
+    'hidas',
+    'roncs',
+    'valhalla',
+    'neon'
 ];
 
 var randomPlace = places[ Math.floor(Math.random() * places.length) ];
