@@ -1,4 +1,4 @@
-var places = [
+const places = [
     'ibolya',
     'füredi',
     'árkád',
@@ -24,8 +24,12 @@ var places = [
     'neon'
 ];
 
-var randomPlace = places[ Math.floor(Math.random() * places.length) ];
+window.onload = () => {
+    let randomPlace;
+    do {
+         randomPlace = places[ Math.floor(Math.random() * places.length) ];
+    } while (randomPlace === localStorage.getItem('place'))
 
-window.onload = function () {
+    localStorage.setItem('place', randomPlace);
     document.getElementById('holiszunk').innerText = randomPlace;
 }
