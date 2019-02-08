@@ -21,7 +21,8 @@ const places = [
     'hidas',
     'roncs',
     'valhalla',
-    'neon'
+    'neon',
+    'zöldfa vendéglő'
 ];
 
 window.onload = () => {
