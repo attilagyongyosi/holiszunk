@@ -27,10 +27,20 @@ const places = [
 
 window.onload = () => {
     let randomPlace;
-    do {
-         randomPlace = places[ Math.floor(Math.random() * places.length) ];
-    } while (randomPlace === localStorage.getItem('place'))
+
+    if (isWeddingDate()) {
+        randomPlace = 'Erdőspuszta Club Hotel, Arbo Borozó';
+    } else {
+        do {
+            randomPlace = places[ Math.floor(Math.random() * places.length) ];
+        } while (randomPlace === localStorage.getItem('place'));
+    }
 
     localStorage.setItem('place', randomPlace);
     document.getElementById('holiszunk').innerText = randomPlace;
+};
+
+function isWeddingDate() {
+    const weddingDate = new Date('2019-04-26');
+    return new Date().toDateString() === weddingDate.toDateString();
 }
