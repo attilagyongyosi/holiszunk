@@ -22,7 +22,8 @@ const places = [
     'roncs',
     'valhalla',
     'neon',
-    'zöldfa vendéglő'
+    'zöldfa vendéglő',
+    'zugivó'
 ];
 
 window.onload = () => {
