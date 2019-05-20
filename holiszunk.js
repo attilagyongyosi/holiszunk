@@ -41,7 +41,7 @@ window.onload = () => {
     document.getElementById('holiszunk').innerText = randomPlace;
 };
 
-function isWeddingDate() {
+const isWeddingDate = () => {
     const weddingDate = new Date('2019-04-26');
     return new Date().toDateString() === weddingDate.toDateString();
 }
