@@ -14,6 +14,7 @@ body {
     justify-content: center;
 
     background-color: #212121;
+    color: #FFFFFF;
 }
 
 a, a:visited {
@@ -21,11 +22,16 @@ a, a:visited {
     color: #FFFFFF;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #holiszunk {
     text-align: center;
     font-size: 7em;
     text-transform: uppercase;
-    color: #FFFFFF;
 }
 
 #gh-link {

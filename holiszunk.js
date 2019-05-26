@@ -1,6 +1,9 @@
-const places = [
+const GOOGLE_MAPS_URL = 'https://www.google.com/maps/embed/v1/place?q=';
+const CITY = 'debrecen';
+const API_KEY = 'AIzaSyACo5ZaV23_t-CKSOUfbLoqFxXMqRs5hS0';
+const PLACES = [
     'ibolya',
-    'füredi',
+    'füredi söröző',
     'árkád',
     'vitaminsarok',
     'korzó',
@@ -29,19 +32,13 @@ const places = [
 window.onload = () => {
     let randomPlace;
 
-    if (isWeddingDate()) {
-        randomPlace = 'Erdőspuszta Club Hotel, Arbo Borozó';
-    } else {
-        do {
-            randomPlace = places[ Math.floor(Math.random() * places.length) ];
-        } while (randomPlace === localStorage.getItem('place'));
-    }
+    do {
+        randomPlace = PLACES[ Math.floor(Math.random() * PLACES.length) ];
+    } while (randomPlace === localStorage.getItem('place'));
+
 
     localStorage.setItem('place', randomPlace);
     document.getElementById('holiszunk').innerText = randomPlace;
-};
 
-const isWeddingDate = () => {
-    const weddingDate = new Date('2019-04-26');
-    return new Date().toDateString() === weddingDate.toDateString();
-}
+    document.getElementById('map').src = `${GOOGLE_MAPS_URL}${randomPlace},${CITY}&key=${API_KEY}`;
+};
