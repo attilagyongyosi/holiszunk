@@ -30,14 +30,14 @@ const PLACES = [
 ];
 
 window.onload = () => {
-    let randomPlace = 'EPAM Debrecen';
+    let randomPlace;
 
-    /*do {
+    do {
         randomPlace = PLACES[ Math.floor(Math.random() * PLACES.length) ];
     } while (randomPlace === localStorage.getItem('place'));
 
 
-    localStorage.setItem('place', randomPlace);*/
+    localStorage.setItem('place', randomPlace);
     document.getElementById('holiszunk').innerText = randomPlace;
 
     document.getElementById('map').src = `${GOOGLE_MAPS_URL}${randomPlace},${CITY}&key=${API_KEY}`;
