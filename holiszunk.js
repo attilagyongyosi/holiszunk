@@ -26,7 +26,8 @@ const PLACES = [
     'valhalla',
     'neon',
     'zöldfa vendéglő',
-    'zugivó'
+    'zugivó',
+    'prémium söröző'
 ];
 
 window.onload = () => {
