@@ -12,6 +12,7 @@ const PLACES = [
     'svejk',
     'mob',
     'nagyállomás resti',
+    'krajcáros kortyoló',
     'station',
     'róna',
     'seven',
