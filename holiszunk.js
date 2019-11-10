@@ -1,5 +1,5 @@
 const GOOGLE_MAPS_URL = 'https://www.google.com/maps/embed/v1/place?q=';
-const CITY = 'debrecen';
+const CITY = 'amsterdam';
 const API_KEY = 'AIzaSyACo5ZaV23_t-CKSOUfbLoqFxXMqRs5hS0';
 const PLACES = [
     'ibolya',
