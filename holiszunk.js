@@ -18,17 +18,20 @@ const PLACES = [
     'seven',
     'szóda',
     'mátyás pince',
-    'after',
+    'after presszó',
     'fácán',
     'say hello',
     'pikoló',
     'hidas',
     'roncs',
     'valhalla',
-    'neon',
     'zöldfa vendéglő',
     'zugivó',
-    'prémium söröző'
+    'prémium söröző',
+    'beer & wurst',
+    'miami',
+    'the wall',
+    'susmus'
 ];
 
 window.onload = () => {
@@ -37,8 +40,7 @@ window.onload = () => {
     do {
         randomPlace = PLACES[ Math.floor(Math.random() * PLACES.length) ];
     } while (randomPlace === localStorage.getItem('place'));
-
-    randomPlace = 'Café De Nieuwe Lelie';
+    
     localStorage.setItem('place', randomPlace);
     document.getElementById('holiszunk').innerText = randomPlace;
 
