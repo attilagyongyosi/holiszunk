@@ -1,5 +1,5 @@
 const GOOGLE_MAPS_URL = 'https://www.google.com/maps/embed/v1/place?q=';
-const CITY = 'amsterdam';
+const CITY = 'debrecen';
 const API_KEY = 'AIzaSyACo5ZaV23_t-CKSOUfbLoqFxXMqRs5hS0';
 const PLACES = [
     'ibolya',
@@ -40,7 +40,7 @@ window.onload = () => {
     do {
         randomPlace = PLACES[ Math.floor(Math.random() * PLACES.length) ];
     } while (randomPlace === localStorage.getItem('place'));
-    
+
     localStorage.setItem('place', randomPlace);
     document.getElementById('holiszunk').innerText = randomPlace;
 
