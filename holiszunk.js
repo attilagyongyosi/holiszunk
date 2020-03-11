@@ -28,7 +28,7 @@ const PLACES = [
     'zöldfa vendéglő',
     'zugivó',
     'prémium söröző',
-    'beer & wurst',
+    'beer and wurst',
     'miami',
     'the wall',
     'susmus'
