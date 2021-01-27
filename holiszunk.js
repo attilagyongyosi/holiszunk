@@ -31,7 +31,8 @@ const PLACES = [
     'beer and wurst',
     'miami',
     'the wall',
-    'susmus'
+    'susmus',
+    'laguna presszó'
 ];
 
 window.onload = () => {
