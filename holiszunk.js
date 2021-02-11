@@ -32,7 +32,8 @@ const PLACES = [
     'miami',
     'the wall',
     'susmus',
-    'laguna presszó'
+    'laguna presszó',
+    'aranypart söröző'
 ];
 
 window.onload = () => {
